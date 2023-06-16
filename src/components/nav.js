@@ -11,9 +11,9 @@ function Nav() {
     
   };
 
-  const closeMenu = () => {
-    setIsActive(false);
-  };
+  // const closeMenu = () => {
+  //   setIsActive(false);
+  // };
 
   return (
     <header className={styles.header}>

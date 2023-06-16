@@ -1,5 +1,5 @@
 // import React,{useState} from 'react'
-import './nav.css';
+import styles from "./nav.module.css";
 
 import React, { useState } from 'react';
 
@@ -15,27 +15,27 @@ function Nav() {
   };
 
   return (
-    <header className="header">
-      <nav className="navbar">
-        <a href="#" className="nav-logo">Smoothie</a>
-        <ul className={`nav-menu ${isActive ? 'active' : ''}`}>
-          <li className="nav-item">
-            <a href="#" className="nav-link" >Home</a>
+    <header className={styles.header}>
+      <nav className={styles.navbar}>
+        <a href="#" className={styles["nav-logo"]}>Smoothie</a>
+        <ul className={`${styles["nav-menu"]} ${isActive ? styles.active : ''}`}>
+          <li className={styles["nav-item"]}>
+            <a href="#" className={styles["nav-link"]} >Home</a>
           </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link" >About</a>
+          <li className={styles["nav-item"]}>
+            <a href="#" className={styles["nav-link"]} >About</a>
           </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">Menu</a>
+          <li className={styles["nav-item"]}>
+            <a href="#" className={styles["nav-link"]}>Menu</a>
           </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link" >Contact</a>
+          <li className={styles["nav-item"]}>
+            <a href="#" className={styles["nav-link"]} >Contact</a>
           </li>
         </ul>
-        <div className={`hamburger ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+        <div className={`${styles.hamburger} ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
         </div>
       </nav>
     </header>

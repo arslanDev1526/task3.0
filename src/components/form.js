@@ -47,10 +47,10 @@ const ContactForm = () => {
         updatedErrors.name = "Name is required";
         isValid = false;
       } else {
-        const nameWords = inputs.name.trim().split(" ");
+        const nameWords = inputs.name.trim().split("");
         if (nameWords.length < 3) {
-          updatedErrors.name = "Invalid name";
-          isValid = false;
+          updatedErrors.name = " Full Name is required";
+          isValid = true;
         }
       }
 
@@ -93,7 +93,8 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
+        <h1> Contact Us </h1>
       <div className={styles["form-input"]}>
         <input
           type="text"
@@ -123,8 +124,7 @@ const ContactForm = () => {
       <div className={styles["form-text-area"]}>
         <textarea
           name="message"
-          cols="10"
-          rows="10"
+          rows="7"
           className="textar"
           placeholder="Message"
           value={inputs.message}

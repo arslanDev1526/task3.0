@@ -69,7 +69,7 @@ const ContactForm = () => {
       } else {
         const addressChara = inputs.address.trim().split("");
         if (addressChara.length < 10) {
-          updatedErrors.address = "Write complete address";
+          updatedErrors.address = "Full Address is required";
           isValid = false;
         }
       }
@@ -103,7 +103,7 @@ const ContactForm = () => {
           value={inputs.name}
           onChange={handleChange}
         />
-        {errors.name && <span className={styles.error}>{errors.name}</span>}
+        {errors.name && <p className={styles.error}>{errors.name}</p>}
         <input
           type="email"
           name="email"
@@ -111,7 +111,7 @@ const ContactForm = () => {
           value={inputs.email}
           onChange={handleChange}
         />
-        {errors.email && <span className={styles.error}>{errors.email}</span>}
+        {errors.email && <p className={styles.error}>{errors.email}</p>}
         <input
           type="text"
           name="address"
@@ -119,7 +119,7 @@ const ContactForm = () => {
           value={inputs.address}
           onChange={handleChange}
         />
-        {errors.address && <span className={styles.error}>{errors.address}</span>}
+        {errors.address && <p className={styles.error}>{errors.address}</p>}
       </div>
       <div className={styles["form-text-area"]}>
         <textarea
@@ -130,7 +130,7 @@ const ContactForm = () => {
           value={inputs.message}
           onChange={handleChange}
         ></textarea>
-        {errors.message && <span className={styles.error}>{errors.message}</span>}
+        {errors.message && <p className={styles.error}>{errors.message}</p>}
         <button type="submit" className={styles.btn}>
           Submit
         </button>

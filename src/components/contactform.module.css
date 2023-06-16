@@ -1,5 +1,10 @@
 .form h1 {
   text-align: center;
+  padding-bottom: 1rem;
+}
+
+.form { 
+  margin-bottom: 2rem;
 }
 
 .form-input {
@@ -24,7 +29,7 @@ textarea {
 
 .btn {
   display: block;
-  width: 97%;
+  width: 90%;
 
   padding: 1rem 2rem;
   background-color: #007bff;
@@ -53,12 +58,13 @@ textarea {
   }
 
   .btn {
-    width: 63%;
+    width: 60%;
     margin: 1rem auto;
   }
 
   .error {
     margin-right: 20rem;
+
   }
 }
 
@@ -69,7 +75,7 @@ textarea {
   }
 
   .btn {
-    width: 53%;
+    width: 50%;
   }
   .error {
     margin-right: 24rem;

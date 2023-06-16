@@ -55,7 +55,10 @@ const Menue = () => {
     ];
   
     return (
+<>
+      <h1 className={styles.menu}> Menu </h1>
       <section id={styles.menue}>
+       
 
         {menuItems.map((item, index) => (
           <MenuCard
@@ -67,6 +70,7 @@ const Menue = () => {
           />
         ))}
       </section>
+      </>
     );
   };
   

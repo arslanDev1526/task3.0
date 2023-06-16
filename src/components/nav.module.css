@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 li {
   list-style: none;
@@ -26,7 +22,7 @@ a {
 .nav-menu {
   position: fixed;
   left: -100%;
-  top: 5rem;
+  top: 4rem;
   background-color: #fff;
   width: 100%;
   border-radius: 10px;
@@ -78,8 +74,9 @@ a {
     top: 0rem;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    gap: 6rem;
     box-shadow: 0 10px 27px white;
-    margin-left: 15rem;
+    margin-left: 75rem;
+ 
   }
 }

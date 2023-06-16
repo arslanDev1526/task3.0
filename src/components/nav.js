@@ -8,6 +8,8 @@ function Nav() {
 
   const toggleMenu = () => {
     setIsActive(!isActive);
+    console.log("i am clicked")
+    
   };
 
   const closeMenu = () => {
@@ -32,7 +34,7 @@ function Nav() {
             <a href="#" className={styles["nav-link"]} >Contact</a>
           </li>
         </ul>
-        <div className={`${styles.hamburger} ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
+        <div className={`${styles.hamburger} ${isActive ? 'active' : ' '}`} onClick={toggleMenu}>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>

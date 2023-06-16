@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card p {
+
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.menu-img {
+  width: 100%;
+}
+
+#menue {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  
+}
+
+.card {
+  width: 80%;
+   margin:  1rem auto ;
+}
+
+
+
+@media  screen and (min-width: 768px) {
+  #menue {
+    width: 90%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .card {
+    width: 40%;
+  }
+}
+
+@media  screen and (min-width: 1024px) {
+  #menue {
+    width: 90%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .card {
+    width: 30%;
+  }
+}
+

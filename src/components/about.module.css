@@ -1,11 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 #about {
-  margin: 1rem;
+  margin: 2rem;
+    
 }
 
 #about h1 {
@@ -16,14 +13,23 @@
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
 }
 
 @media screen and (min-width: 768px) {
   #about h1 {
     text-align: center;
-    padding-right: 8rem;
+    /* padding-right: 8rem; */
   }
+
+  #about :nth-child(2) p { 
+
+ border: solid red 1px;
+  }
+  
+
 
   #about :nth-child(3) {
     flex-direction: row-reverse;

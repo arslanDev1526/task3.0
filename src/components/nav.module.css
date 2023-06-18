@@ -19,6 +19,10 @@ a {
   padding: 1rem 1.5rem;
 }
 
+/* .hamburger{ 
+  border: solid;
+} */
+
 .nav-menu {
   position: fixed;
   left: -100%;
